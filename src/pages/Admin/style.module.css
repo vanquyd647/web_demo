@@ -1,0 +1,22 @@
+/* Container layout styles */
+.container {
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  /* Title styles */
+  .ant-typography h4 {
+    margin-bottom: 0;
+  }
+  
+  /* Avatar styling */
+  .avatar-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Dropdown menu styles */
+  .ant-menu-dark.ant-menu-inline .ant-menu-item {
+    padding-left: 24px !important;
+  }
+  

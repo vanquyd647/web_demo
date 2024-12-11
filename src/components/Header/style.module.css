@@ -1,0 +1,206 @@
+.header {
+  top: 0;
+  position: fixed;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #081158;
+  background: white;
+  z-index: 1;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 150px;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+.navbar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav_item {
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+}
+
+.header button {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #081158;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.header button a {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+header button:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+-webkit-filter: blur(5px);
+width: calc(100% + 4px);
+height: calc(100% + 4px);
+animation: glowing-button-85 20s linear infinite;
+transition: opacity 0.3s ease-in-out;
+border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+0% {
+  background-position: 0 0;
+}
+50% {
+  background-position: 400% 0;
+}
+100% {
+  background-position: 0 0;
+}
+}
+
+.nav_item button a{
+  color: white;
+  height: 100%;
+  }
+  
+  header button:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #081158;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  }
+
+
+.shopyfi {
+  margin-left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.user {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 50px;
+  width: 50px;
+}
+
+.user img {
+  width: 70%;
+  border-radius: 50%;
+  height: 70%;
+}
+
+.user p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 0;
+  top: 79%;
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 15px;
+}
+
+.dropdown-content li {
+  list-style: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.user:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li:hover {
+  background-color: rgb(165, 165, 165);
+}
+
+.TabsList {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20%;
+}
+
+.Tab {
+  flex: 1;
+  text-align: center;
+  color: #081158 !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  text-transform: uppercase;
+  background-color: #fff;
+  transition: all 0.3s;
+  padding: 0 !important;
+}
+
+.Tab:hover {
+  background-color: #f0f0f0; 
+  border-bottom: 2px solid #081158;
+}
+
+.Tab.Mui-selected #text{
+  border-bottom: 2px solid #081158;
+}
+.cartBadge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 12px;
+  font-weight: bold;
+  transform: translate(50%, -50%); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,167 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #081158;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    grid-template-rows: auto 1fr auto;
+    color: #D3D3D3;
+}
+
+.newSection {
+    grid-column: 1 / -1;
+    text-align: center;
+    background-color: #081158;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+.newSection1 {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #081158;
+    color: white;
+    border-top: 1px solid white;
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.footerItem {
+    border-right: 1px solid white;
+    padding: 0 10px;
+}
+
+.footerItem:last-child {
+    border-right: none;
+}
+
+.logo {
+    text-align: left;
+}
+
+.logoImg {
+    width: 200px;
+    margin: 10px 0 0 15px;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 0px;
+}
+
+.map {
+    border: none;
+    margin-left: 10px;
+    height: 100px;
+    margin-bottom: 15px;
+    width: 95% !important;
+    padding-top: 5px;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 20px;
+    
+    line-height: 1.5;
+}
+
+.contact1 {
+    text-align: center;
+}
+
+.socialMedia {
+    display: flex;
+    gap: 10px; /* Adds spacing between social media items */
+    margin-right: 50px;
+}
+
+.socialMedia a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.socialMedia a:hover {
+    color: #007bff;
+}
+
+.icon {
+    font-size: 1em;
+    margin-right: 8px; 
+    vertical-align: middle;
+}
+
+.explore {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.explore a {
+    color: white;
+    text-decoration: none;
+}
+
+.explore a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #555;
+    margin: 10px 0;
+}
+
+.contact > h1, .explore h1 {
+    font-size: 25px;
+}
+
+.contact h2 {
+    font-size: 18px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.map {
+    height: 200px;
+    border: none;
+    float: left;
+}
+
+.floatLeft {
+    float: left;
+    font-weight: bold;
+}
+
+.gradientText {
+    color: #D3D3D3;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left; 
+}
+
+.container {
+    width: 100%;
+}
+
+.footer1 {
+    border: solid 1px gray;
+    width: 100%;
+}
+.addressText{
+    font-weight: bold;
+    font-size: 1em;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+.giandong{
+    margin-bottom: 20px;
+}
